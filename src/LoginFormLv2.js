@@ -1,10 +1,15 @@
 import React, { useState } from "react";
-
+import LoginFormLogics from "./LoginFormLogics";
 /*
 Create login form with userName and password.
 Create function login with onClick - Button.
 If user enters userName = 'user1' and pass = 'user1pass'
 the form hides itself and displays 'Welcome, User1!'
+*/
+
+/*
+New Task:
+Move login form in new component and keep the same functionality
 */
 
 export default function LoginForm() {
@@ -25,8 +30,8 @@ export default function LoginForm() {
         //console.log(event.target.name);
     }
 
-    function login(){
-        if(formData.username == 'user1' && formData.password == 'user1pass'){
+    function login() {
+        if (formData.username == 'user1' && formData.password == 'user1pass') {
             setIsLogged(true);
         }
     }
@@ -37,27 +42,7 @@ export default function LoginForm() {
             <div>
                 {JSON.stringify(formData)}
             </div>
-            {!isLogged &&
-                <div>
-                    <div>
-                        <label>Username</label>
-                        <input type="text"
-                            name="username"
-                            onInput={handleInput}
-                        />
-                    </div>
-                    <div>
-                        <label>Password</label>
-                        <input type="password"
-                            name="password"
-                            onInput={handleInput}
-                        />
-                    </div>
-                    <div>
-                        <button onClick={login} type="button">Login</button>
-                    </div>
-                </div>
-            }
+            {!isLogged && <LoginFormLogics handleInput = {handleInput}  login = {login} /> }
             {isLogged && <div>Hello, User1</div>}
         </div>
     );
