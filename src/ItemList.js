@@ -17,7 +17,10 @@ export default function ItemList(){
         <div>
             <ul>
                 {items.map((item, index) => 
-                <li key={index} onClick={() => {handleClick(index)}}>{item} - {index}</li>)}
+                <li 
+                    className={isHighlighted[index] ? 'bg-blue' : ''}
+                    key={index} 
+                    onClick={() => {handleClick(index)}}>{item} - {index}</li>)}
             </ul>
             <div>{JSON.stringify(isHighlighted)}</div>
         </div>
