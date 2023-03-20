@@ -7,6 +7,7 @@ import './ItemList.css';
 import LoginFormLv2 from './LoginFormLv2';
 import CheckBox from './CheckBox';
 import HelloName from './HelloName';
+import SpecialBtn from './SpecialBtn';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,7 @@ root.render(
     <LoginFormLv2 />
     <CheckBox />
     <HelloName/>
+    <SpecialBtn/>
   </React.StrictMode>
 );
 
