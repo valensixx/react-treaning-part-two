@@ -6,6 +6,7 @@ import ItemList from './ItemList';
 import './ItemList.css';
 import LoginFormLv2 from './LoginFormLv2';
 import CheckBox from './CheckBox';
+import HelloName from './HelloName';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -15,6 +16,7 @@ root.render(
     <ItemList/> 
     <LoginFormLv2 />
     <CheckBox />
+    <HelloName/>
   </React.StrictMode>
 );
 
