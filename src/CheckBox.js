@@ -17,9 +17,15 @@ export default function CheckBox(){
                 <input 
                     type="checkbox"
                     onClick={(e) => {
+                        setCounter(e.target.checked ? counter + 1 : counter - 1)
+
+                        /*
                         if(e.target.checked){
-                            alert('example');
+                            setCounter(counter + 1);
+                        }else {
+                            setCounter(counter - 1);
                         }
+                        */
                     }} 
                 />
                 <span>{item}</span>
