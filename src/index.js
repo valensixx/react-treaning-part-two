@@ -5,6 +5,7 @@ import App from './App';
 import ItemList from './ItemList';
 import './ItemList.css';
 import LoginFormLv2 from './LoginFormLv2';
+import CheckBox from './CheckBox';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -13,6 +14,7 @@ root.render(
     <App />
     <ItemList/> 
     <LoginFormLv2 />
+    <CheckBox />
   </React.StrictMode>
 );
 

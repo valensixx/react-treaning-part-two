@@ -8,9 +8,29 @@ the counter shows all of the active checkboxes
 */
 
 export default function CheckBox(){
-    return(
-        <div>
+    const [items, setItems] = useState(['Item 1', 'Item 2', 'Item 3']);
+    const [counter, setCounter] = useState(0);
 
+    function renderLi(item){
+        return(
+            <li>
+                <input 
+                    type="checkbox"
+                    onClick={(e) => {
+                        if(e.target.checked){
+                            alert('example');
+                        }
+                    }} 
+                />
+                <span>{item}</span>
+            </li>
+        );
+    };
+
+    return(
+        <div >
+            <div>Counter: {counter} </div>
+            {items.map(renderLi)}
         </div>
     );
 };
