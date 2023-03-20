@@ -10,7 +10,14 @@ and function onClick()
 export default function SpecialBtn(){
     return(
         <div>
-            <SpecialBtnProps/>
+            <SpecialBtnProps 
+                title = "Click me!"
+                onClick ={()=>{
+                    console.log('hello');
+                }}
+                color="orange"
+                background="blueviolet"
+            />
         </div>
     );
 };
