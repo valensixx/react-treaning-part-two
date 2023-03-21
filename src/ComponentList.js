@@ -7,7 +7,15 @@ import React, {useState} from "react";
 //takes props - width, icon, title, description  
 
 export default function ComponentList(){
+    const items = [
+        {icon: 'fa fa-pencil', title: 'Example', description: 'Example description'},
+        {icon: 'fa fa-pencil', title: 'Example', description: 'Example description'},
+        {icon: 'fa fa-pencil', title: 'Example', description: 'Example description'},
+    ];
+
     return(
-        <></>
+        <div>
+
+        </div>
     );
 };
