@@ -8,6 +8,7 @@ import LoginFormLv2 from './LoginFormLv2';
 import CheckBox from './CheckBox';
 import HelloName from './HelloName';
 import SpecialBtn from './SpecialBtn';
+import DropDownMenu from './DropDownMenu';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,6 +20,7 @@ root.render(
     <CheckBox />
     <HelloName/>
     <SpecialBtn/>
+    <DropDownMenu/>
   </React.StrictMode>
 );
 
