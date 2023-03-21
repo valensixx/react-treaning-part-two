@@ -2,7 +2,7 @@ import React, {useState} from "react";
 import './DropDownMenuProps.css';
 
 //at line 5 i am using different way of doing DDMP(perops) == DDMP({label, oprions, onChange})
-export default function DDMP({label, oprions, onChange}){
+export default function DDMP({label, options, onChange}){
     return(
         <div className="dropdown">
             <label className="dd-label">
@@ -10,6 +10,11 @@ export default function DDMP({label, oprions, onChange}){
             </label>
             <select className="dd-select" onChange={onChange}>
                 <option value ="" >Select</option>
+                {options.map(option => (
+                <option value={option.value}>
+                    {option.label}
+                </option>
+                ))}
             </select>
         </div>
     );

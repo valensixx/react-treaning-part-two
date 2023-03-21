@@ -10,7 +10,10 @@ export default function DropDownMenu() {
     ];
     return (
         <div>
-            <DropDownMenuProps />
+            <DropDownMenuProps 
+                label ="Select option!" 
+                options = {options}           
+            />
         </div>
     );
 };
