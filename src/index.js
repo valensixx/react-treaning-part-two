@@ -9,6 +9,7 @@ import CheckBox from './CheckBox';
 import HelloName from './HelloName';
 import SpecialBtn from './SpecialBtn';
 import DropDownMenu from './DropDownMenu';
+import ComponentList from './ComponentList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -21,6 +22,7 @@ root.render(
     <HelloName/>
     <SpecialBtn/>
     <DropDownMenu/>
+    <ComponentList/>
   </React.StrictMode>
 );
 
