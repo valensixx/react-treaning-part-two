@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import List from "./list/List";
 
 //create component list with props
 //items array with elements -> icon, titele, description
@@ -15,7 +16,17 @@ export default function ComponentList(){
 
     return(
         <div>
+            <List 
+                items={items}
+                width = {'30%'}
+                direction = {'row'}
+            />
 
+            <List 
+                items={items}
+                width = {'100%'}
+                direction = {'column'}
+            />
         </div>
     );
 };
