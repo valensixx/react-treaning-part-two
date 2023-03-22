@@ -1,4 +1,5 @@
 import React, {useState} from "react";
+import ILv2Props from "./ItemListlv2Props";
 
 /*
 Create component List with arr[name,f-name,description].
@@ -16,7 +17,7 @@ export default function ILv2(){
 
     return(
         <div>
-            
+            <ILv2Props  items={items} />
         </div>
     );
 };
