@@ -1,4 +1,5 @@
 import React,{useState} from "react";
+import ILP from "./ImageListPlus";
 
 /*
 Create component ImageList taking arr[title, image link, and tags]
@@ -14,7 +15,7 @@ export default function ImageList(){
     ]);
     return(
         <div>
-            
+            <ILP  items ={items}/>
         </div>
     );
 };
