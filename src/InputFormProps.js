@@ -6,7 +6,11 @@ export default function IFProps(props) {
         return (
             <li>
                <span>{item}</span> 
-               <button>Delete</button>
+               <button onClick={()=>{
+                    props.delete(index)
+               }}>
+                Delete
+                </button>
             </li>
         );
     };

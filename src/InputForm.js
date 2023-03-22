@@ -5,7 +5,7 @@ import InputFormProps from "./InputFormProps"
 //the input must be displayed + button - delete.
 
 export default function InputForm(props){
-    const [items, setItems] = useState([1,2,3]);
+    const [items, setItems] = useState([]);
     const [inputValue, setInputValue] = useState('');
     return (
         <div>
@@ -17,12 +17,22 @@ export default function InputForm(props){
                         setInputValue(e.target.value);
                     }} 
                 />
-                <button>
+                <button onClick={() => {
+                    items.push(inputValue);
+                    setItems([...items]);
+                    setInputValue('');
+                }}>
                     Add
                 </button>
             </div>
             <div>
-                <InputFormProps items = {items} />
+                <InputFormProps 
+                    items = {items} 
+                    delete = {(index) => {
+                        items.splice(index, 1);
+                        setItems([...items]);
+                    }}
+                />
             </div>
         </div>
     );
