@@ -10,6 +10,7 @@ import HelloName from './HelloName';
 import SpecialBtn from './SpecialBtn';
 import DropDownMenu from './DropDownMenu';
 import ComponentList from './ComponentList';
+import InputForm from './InputForm';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -23,6 +24,7 @@ root.render(
     <SpecialBtn/>
     <DropDownMenu/>
     <ComponentList/>
+    <InputForm />
   </React.StrictMode>
 );
 
