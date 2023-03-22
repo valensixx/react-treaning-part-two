@@ -5,7 +5,22 @@ import React,{useState} from "react";
 //the input must be displayed + button - delete.
 
 export default function InputForm(){
+    const [items, setItems] = useState([]);
+    const [inputValue, setInputValue] = useState('');
     return (
-        <></>
+        <div>
+            <div>
+                <input 
+                    type = "text"
+                    value = {inputValue}
+                    onInput = {(e) =>{
+                        setInputValue(e.target.value);
+                    }} 
+                />
+                <button>
+                    Add
+                </button>
+            </div>
+        </div>
     );
 };
