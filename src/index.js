@@ -12,6 +12,7 @@ import DropDownMenu from './DropDownMenu';
 import ComponentList from './ComponentList';
 import InputForm from './InputForm';
 import Itemlistlv2 from './ItemListlv2';
+import ImageList from './ImageList';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -27,6 +28,7 @@ root.render(
     <ComponentList/>
     <InputForm />
     <Itemlistlv2 /> 
+    <ImageList/>
   </React.StrictMode>
 );
 
